@@ -31,8 +31,6 @@ function App() {
         password: "",
         confirmPassword: ""
       });
-
-      // window.location = ('/'): This can be the loaction or page you would want to be directed to after a signup
     }).catch(err => console.log(err));
 
     setFormData('');

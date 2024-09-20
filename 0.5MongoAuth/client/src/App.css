@@ -1,0 +1,25 @@
+.App{
+  background-color: yellow;
+  padding: 30px;
+}
+.App .appDiv{
+  display: flex;
+  flex-direction: row;
+  /* background-color: red; */
+}
+
+.appDiv form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.appDiv form  input{
+  height: 25px;
+  width: 300px;
+}
+
+.App button{
+  margin-top: 20px;
+  margin-left: 15px;
+}
