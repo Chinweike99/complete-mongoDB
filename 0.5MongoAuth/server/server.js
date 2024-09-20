@@ -14,7 +14,16 @@ mongoose.connect(process.env.MONGOOSE)
     .catch(err => console.log('Error connecting to MongoDB:', err));
 
 
-app.use('/app', router);
+ /** MIDDLEWARES */   
+// app.use(express.json()); 
+app.use(express.json()) // Acivates body-parser
+app.use(cors());
+
+/* Initialise the route as a middleware.
+   app: This is the base
+   router: imported route url from router.js, this would be appended to the base part..
+*/
+app.use('/app', router); // This connects the routes to our server
 
 
 app.listen(PORT, ()=> {
